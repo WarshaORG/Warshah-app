@@ -10,15 +10,13 @@ module.exports = function (app, express) {
 
 	////////////////////////////user/////////////////////////////////////
 		app.post('/api/signin', UserController.signin);
-		app.get('/api/signin', UserController.signin);
+		// app.get('/api/signin', UserController.signin);
 		app.post('/api/signup',UserController.signup);
 		// app.get('/api/signup',UserController.signup);
 
 	//////////////////////////TradeWorker///////////////////////////////
-		// app.post('/api/signin',TradeWorkerController.signin);
-		// app.get('/api/signin',TradeWorkerController.signin);
+		// app.post('/api/signin',TradeWorkerController.insert);
 		// app.post('/api/signup',TradeWorkerController.signup);
-		// app.get('/api/signup',TradeWorkerController.signup);	
 };
 
 
