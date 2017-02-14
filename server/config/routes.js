@@ -1,22 +1,16 @@
 var UserController = require('../DataBase/UserController.js');
-// var TradeWorkerController = require('../DataBase/TradeWorkerController.js');
+ var TradeWorkerController = require('../DataBase/TradeWorkerController.js');
 
 
 module.exports = function (app, express) {
 		
-		app.get('/', function (req, res) {
-			res.json('Hello World');
-		});
-
 	////////////////////////////user/////////////////////////////////////
 		app.post('/api/signin', UserController.signin);
-		// app.get('/api/signin', UserController.signin);
 		app.post('/api/signup',UserController.signup);
-		// app.get('/api/signup',UserController.signup);
 
 	//////////////////////////TradeWorker///////////////////////////////
-		// app.post('/api/signin',TradeWorkerController.insert);
-		// app.post('/api/signup',TradeWorkerController.signup);
+		app.post('/api/insert',TradeWorkerController.insert);
+		app.get('/api/all',TradeWorkerController.getAllTradeWorker);
 };
 
 
