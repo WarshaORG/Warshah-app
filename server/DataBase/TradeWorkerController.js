@@ -25,6 +25,15 @@ module.exports = {
 					});
 				}
 			})
+	},
+	getAllTradeWorker : function (req, res) {
+		TradeWorker.find().exec(function (err, allTradWorker) {
+			if(err){
+				res.status(500).send('err');
+			}else{
+				res.status(200).send(allTradWorker);
+			}
+		});
 	}
 	
 	// signup: function (req, res, next) {
