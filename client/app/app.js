@@ -1,4 +1,4 @@
-var myapp = angular.module('myapp',['myapp.usercContr',
+ angular.module('myapp',['myapp.usercContr',
 	'myapp.TradeworkerContr',
 	'ngRoute']);
 
