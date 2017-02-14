@@ -1,0 +1,19 @@
+{
+  "name": "Warshah",
+  "version": "1.0.0",
+  "description": "simple app",
+  "main": "server.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon --ignore node_modules server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "moamar & duaa & marwa & kamal " ,
+  "license": "ISC",
+  "dependencies":{
+    "express":"*",
+    "body-parser":"*",
+    "mongoose":"*"
+  },"devDependencies": {
+    "morgan": "^1.7.0"
+  }
+}

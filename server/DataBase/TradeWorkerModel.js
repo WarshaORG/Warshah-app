@@ -11,6 +11,10 @@ var TradeWorkerSchema = new mongoose.Schema({
 		type     : String, 
 		required : true
 	},
+	email:{
+		type     : String, 
+		required : true
+	},
 	place:{
 		type     : String, 
 		required : true
@@ -24,6 +28,9 @@ var TradeWorkerSchema = new mongoose.Schema({
 		required : true 
 	},
 	experiance:{
+		type     : String
+	},
+	picture:{
 		type     : String
 	}
 

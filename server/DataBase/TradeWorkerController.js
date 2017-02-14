@@ -10,10 +10,12 @@ module.exports = {
 					var newTradeWorker = new TradeWorker ({
 						username : req.body.username,
 			        	password : req.body.password,
+			        	email:req.body.email,
 			        	place : req.body.place,
 			        	service : req.body.service,
 			        	phone : req.body.phone,
-			        	experiance : req.body.experiance
+			        	experiance : req.body.experiance,
+			        	picture: req.body.picture
 					});
 					newTradeWorker.save(function(err, newTradeWorker){
 			    		if(err){
