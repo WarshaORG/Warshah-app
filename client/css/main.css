@@ -6,20 +6,22 @@ html, body {
   width:100%;
 }
 
-.main {
-  background-color: #e7e7e6 ;
+#main {
+ border-left: 2.5px dotted #e7e7e6;
+ border-right: 2.5px dotted #e7e7e6;
+ border-bottom: 2.5px dotted #e7e7e6;
+
   padding: 40px 0;
 }
 
 .img-responsive {
- height: 155;
- width: 200;
+ height: 186;
+ width: 240;
  padding: 20;
 }
 
 .carousel .item {
-
-  height: 420px;
+  height: 470px;
   background-color: #dbdbdb;
 }
 .carousel .slide{
@@ -42,7 +44,7 @@ html, body {
  margin: 0 10px;
 }
 
-.navbar-inverse {
+/*.navbar-inverse {
   padding-top: 0
   margin: 0
  color: #333;
@@ -53,3 +55,4 @@ html, body {
  border-bottom-right-radius: 0px;
  border-bottom-left-radius: 0px;
 }
+*/
