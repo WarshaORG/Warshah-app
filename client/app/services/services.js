@@ -45,9 +45,19 @@ angular.module('warshah.services', [])
     }).then(function (resp) {
       return resp.data
     })
+  },
+
+  var getAll = function () {
+    return $http({
+      method : 'GET',
+      url : '/api/insert'
+    }).then(function (resp) {
+      return resp.data
+    })
   }
 
   return {
-    insert : insert
+    insert : insert,
+    getAll : getAll
   }
 })
