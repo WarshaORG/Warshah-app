@@ -10,10 +10,23 @@ html, body {
  border-left: 2.5px dotted #e7e7e6;
  border-right: 2.5px dotted #e7e7e6;
  border-bottom: 2.5px dotted #e7e7e6;
-
-  padding: 40px   ;
+ padding: 40px;
 }
 
+.img-left {
+  float: right;
+  margin: 20px 0 0 0;  
+  padding: 50;
+  width: 400;
+}
+
+.img-man {
+  margin: 20px 40px 0 0;
+  float: right;
+ height: 165;
+ width: 185;
+ 
+}
 .img-responsive {
  height: 186;
  width: 240;
