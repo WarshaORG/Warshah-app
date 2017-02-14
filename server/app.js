@@ -6,8 +6,8 @@ app.get('/', function (req, res) {
   res.send('Hello World!')
 })
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+app.listen(2220, function () {
+  console.log('Example app listening on port 2220!')
 })
 
 var mongoURI = process.env.MONGODB_URI ||'mongodb://localhost/WarshahDB';
