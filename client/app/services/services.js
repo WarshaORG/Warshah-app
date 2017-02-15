@@ -28,13 +28,13 @@ angular.module('warshah.services', [])
     $location.path('/signin');
   };
 
-
   return {
     signin: signin,
     signup: signup,
     signout: signout
   };
 })
+
 .factory('Tradeworker',function ($http, $location) {
 
   var insert = function (Tradeworker) {
