@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var mongoose= require ("mongoose"); 
 var bcrypt = require('bcrypt-nodejs');
 var Q = require('q');
@@ -56,3 +57,29 @@ UserSchema.pre('save', function (next) {
 var User= mongoose.model('User', UserSchema);
 module.exports= User; 
 
+=======
+//var mongoose= require ("mongoose"); 
+
+
+var UserSchema = new mongoose.Schema({
+	
+	username:{
+		type     : String, 
+		required : true,
+		unique   : true
+	}, 
+	password:{
+		type     : String, 
+		required : true
+	},
+	email:{
+		type     : String
+	}
+
+}); 
+
+
+var User= mongoose.model('User', UserSchema);
+module.exports= User; 
+
+>>>>>>> 0ac7d5c2237ac67cb17c929c4d3cedfd6d7bed95
