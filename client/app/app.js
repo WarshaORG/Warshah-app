@@ -1,6 +1,6 @@
  angular.module('myapp',['myapp.usercContr',
 	'myapp.TradeworkerContr',
-	'ngRoute']);
+	'ngRoute'])
 
 .config(function($routeProvider){
 	$routeProvider.when('/adduser',{

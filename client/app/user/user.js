@@ -1,5 +1,5 @@
 //make an angulare module called(myapp)
- angular.module('myapp.user',[]);
+ angular.module('myapp.user',[])
 //make a controller called (usercontr) inside myapp module
 // the controller has a dependencies ['$scope','$http','$location','$roteparams',
 //                                     function ($scope,$http,$location,$roteparams){}]	

@@ -43,9 +43,9 @@ angular.module('warshah.services', [])
       url : '/api/insert',
       data : Tradeworker
     }).then(function (resp) {
-      return resp.data
+      return resp.data 
     })
-  },
+  };
 
   var getAll = function () {
     return $http({
