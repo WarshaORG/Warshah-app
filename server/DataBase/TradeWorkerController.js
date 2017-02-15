@@ -4,6 +4,7 @@ module.exports = {
 	insert : function (req, res) {
 		TradeWorker.findOne({username : req.body.username})
  			.exec(function (error, user) {
+ 				console.log(user)
 	 			if(user){
 	 				res.json(new Error('TradeWorker already exist!'));
 	 			}else{
