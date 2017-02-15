@@ -36,19 +36,5 @@ module.exports = {
 			}
 		});
 	}
-	
-	// signup: function (req, res, next) {
-	// 	var username = req.body.username;
-	// 	var password = req.body.password;
-	// 	// check to see if user already exists
-	// 	findOne({username: req.body.username})
-	// 	.then(function (TradeWorker) {
-	// 		if (TradeWorker) {
-	// 			new Error('TradeWorker already exist!');
-	// 		}else{
-	// 		// make a new TradeWorker if not one
-	// 		signin();
-	// 		}
-	// 	})
-	// }	
+
 }
