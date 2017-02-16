@@ -1,6 +1,5 @@
 angular.module('warshah.services', [])
-.factory('User', function ($http, $location, $window) {
- 
+.factory('User', function ($http, $location, $window) { 
   var signin = function (user) {
     return $http({
       method: 'POST',
@@ -22,7 +21,6 @@ angular.module('warshah.services', [])
       return resp.data;
     });
   };
-
 
   var signout = function () {
     $location.path('/signin');
