@@ -1,11 +1,13 @@
- angular.module('myapp',['myapp.usercContr',
+ angular.module('myapp',['myapp.UserController',
 	'myapp.TradeworkerContr',
-	'ngRoute']);
+	'ngRoute',
+	'myapp.services'
+	])
 
 .config(function($routeProvider){
 	$routeProvider.when('/adduser',{
 		templateUrl:'./user/signup.html',                   
-		controller:'usercContr'                  
+		controller:'UserController'                  
 	})
 	.when('/addTradeworker',{
 		templateUrl:'./tradworker/tradworker.html',

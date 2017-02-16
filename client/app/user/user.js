@@ -1,6 +1,6 @@
  angular.module('myapp.user',[])
 
-.controller('user',function ($scope,$http,$location,User){
+.controller('UserController',function ($scope,$http,$location,User){
 	$scope.user = {};
 	 $scope.ifuser=true;
 
@@ -17,7 +17,7 @@
 			$scope.username="";
 			$scope.password="";
 		})
-	};
+	}
 
  	$scope.signup = function (newUser) {
         newUser.username = $scope.username;
