@@ -5,32 +5,34 @@ angular.module('myapp.services', [])
       method: 'POST',
       url: '/api/signin',
       data: user
-    })
-    .then(function (resp) {
+    }).then(function (resp) {
       return resp.data;
     });
-  };
+  },
 
   var signup = function (user) {
     return $http({
       method: 'POST',
       url: '/api/signup',
       data: user
-    })
-    .then(function (resp) {
+    }).then(function (resp) {
       return resp.data;
     });
+<<<<<<< HEAD
   };
+=======
+  },
+>>>>>>> a9a225b2275421949c5d482d3ffde194fde9495d
 
   var signout = function () {
     $location.path('/signin');
-  };
+  }
 
   return {
     signin: signin,
     signup: signup,
     signout: signout
-  };
+  }
 })
 
 .factory('Tradeworker',function ($http, $location) {

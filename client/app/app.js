@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  angular.module('myapp', [
   'myapp.services',
   'myapp.user',
@@ -9,6 +10,18 @@
 	$routeProvider.when('/app/user/signup.html',{
 		templateUrl:'./app/user/signup.html',                   
 		controller:'usercContr'                  
+=======
+ angular.module('myapp',['myapp.UserController',
+	'myapp.TradeworkerContr',
+	'ngRoute',
+	'myapp.services'
+	])
+
+.config(function($routeProvider){
+	$routeProvider.when('/adduser',{
+		templateUrl:'./user/signup.html',                   
+		controller:'UserController'                  
+>>>>>>> a9a225b2275421949c5d482d3ffde194fde9495d
 	})
 	.when('/app/user/login.html',{
 		templateUrl:'/app/user/login.html',                   
