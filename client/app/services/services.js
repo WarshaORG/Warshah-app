@@ -43,7 +43,7 @@ angular.module('myapp.services', [])
     }).then(function (resp) {
       return resp.data
     })
-  },
+  };
 
   var getAll = function () {
     return $http({

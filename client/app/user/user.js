@@ -4,7 +4,7 @@ angular.module('myapp.user',[])
 	$scope.user = {};
 	 $scope.ifuser=true;
 
-	$scope.signin = function ($scope.user) {
+	$scope.signin = function () {
 		User.signin($scope.user)
 		.then(function (data) {
 			$scope.ifuser=false;

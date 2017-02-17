@@ -1,9 +1,8 @@
- angular.module('myapp', [
-  'myapp.services',
-  'myapp.user',
-  'myapp.Tradeworker',
-  'ngRoute'
-])
+ angular.module('myapp',[
+ 	'myapp.services',
+ 	'myapp.user',
+	'myapp.Tradeworker',
+	'ngRoute'])
 
 .config(function($routeProvider){
 	$routeProvider.when('/app/user/signup.html',{
