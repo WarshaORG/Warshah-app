@@ -110,7 +110,7 @@
       </a>
     </div><!-- /.carousel -->
 
-<div class="col-md-12" id="main" ng-repeat="tradeworker in data | filter : searching ">
+<div class="col-md-12" id="main" ng-init="getAllTradeworker()" ng-repeat="tradeworker in data | filter : searching  ">
       <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <img src="image/service2.jpg" alt="...">
