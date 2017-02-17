@@ -1,30 +1,43 @@
-//make an angulare module called(myapp)
- angular.module('myapp.user',[])
-//make a controller called (usercontr) inside myapp module
-// the controller has a dependencies ['$scope','$http','$location','$roteparams',
-//                                     function ($scope,$http,$location,$roteparams){}]	
-.controller('user',function ($scope,$http,$location,User){
+angular.module('myapp.user',[])
+
+.controller('usercContr',function ($scope,$http,$location,User){
 	$scope.user = {};
+	 $scope.ifuser=true;
 
-	  $scope.signin = function () {
-	    User.signin($scope.user)
-	      .then(function () {
-	        // $window.localStorage.setItem('com.shortly', token);
-	        $location.path('/');
-	      })
-	      .catch(function (error) {
-	        console.error(error);
-	      });
-	  };
+	$scope.signin = function ($scope.user) {
+		User.signin($scope.user)
+		.then(function (data) {
+			$scope.ifuser=false;
+			$location.path('/');
+			$window.location.reload();
+		})
+		.catch(function (error) {
+			console.log(error);
+			$scope.ifuser=false;
+			$scope.username="";
+			$scope.password="";
+		})
+	};
 
-	  $scope.signup = function () {
-	    User.signup($scope.user)
-	      .then(function () {
-	        // $window.localStorage.setItem('com.shortly', token);
-	        $location.path('/');
-	      })
-	      .catch(function (error) {
-	        console.error(error);
-	      });
-	  };
+ 	$scope.signup = function (newUser) {
+        newUser.username = $scope.username;
+        User.signup(newUser)
+        .then(function (user) {
+            $scope.signin({
+                username:newUser.username,
+                password:newUser.password
+            });
+        })
+        .catch(function (error) {
+        	console.log(error);
+            console.log("user already exist");
+        })
+    }
 })
+
+
+   
+
+
+
+	    
