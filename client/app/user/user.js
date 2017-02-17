@@ -1,20 +1,11 @@
-<<<<<<< HEAD
 angular.module('myapp.user',[])
-
-.controller('usercContr',function ($scope,$http,$location,User){
-	$scope.user = {};
-	 $scope.ifuser=true;
-
-	$scope.signin = function () {
-=======
- angular.module('myapp.user',[])
 
 .controller('UserController',function ($scope,$http,$location,User){
 	$scope.user = {};
 	 $scope.ifuser=true;
 
-	$scope.signin = function ($scope.user) {
->>>>>>> a9a225b2275421949c5d482d3ffde194fde9495d
+	$scope.signin = function () {
+
 		User.signin($scope.user)
 		.then(function (data) {
 			$scope.ifuser=false;
@@ -27,11 +18,7 @@ angular.module('myapp.user',[])
 			$scope.username="";
 			$scope.password="";
 		})
-<<<<<<< HEAD
 	};
-=======
-	}
->>>>>>> a9a225b2275421949c5d482d3ffde194fde9495d
 
  	$scope.signup = function (newUser) {
         newUser.username = $scope.username;

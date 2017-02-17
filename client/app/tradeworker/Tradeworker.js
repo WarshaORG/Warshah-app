@@ -12,13 +12,8 @@ angular.module('myapp.Tradeworker',[])
 		})
 		.catch(function (error) {
 			console.log(error);
-<<<<<<< HEAD
 		})
 	};
-=======
-		}
-	}
->>>>>>> a9a225b2275421949c5d482d3ffde194fde9495d
 
 	$scope.addTradeworker = function(){
 		Tradeworker.insert($scope.tradeworker)
@@ -28,12 +23,8 @@ angular.module('myapp.Tradeworker',[])
 		})
 		.catch(function (error) {
 			console.log(error);
-<<<<<<< HEAD
 		})
 	};
-=======
-		}
-	}
->>>>>>> a9a225b2275421949c5d482d3ffde194fde9495d
-
+	
+   $scope.getAllTradeworker();
 });

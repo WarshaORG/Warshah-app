@@ -8,7 +8,7 @@ angular.module('myapp.services', [])
     }).then(function (resp) {
       return resp.data;
     });
-  },
+  };
 
   var signup = function (user) {
     return $http({
@@ -18,11 +18,8 @@ angular.module('myapp.services', [])
     }).then(function (resp) {
       return resp.data;
     });
-<<<<<<< HEAD
+
   };
-=======
-  },
->>>>>>> a9a225b2275421949c5d482d3ffde194fde9495d
 
   var signout = function () {
     $location.path('/signin');
