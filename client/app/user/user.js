@@ -1,10 +1,11 @@
- angular.module('myapp.user',[])
+angular.module('myapp.user',[])
 
 .controller('UserController',function ($scope,$http,$location,User){
 	$scope.user = {};
 	 $scope.ifuser=true;
 
-	$scope.signin = function ($scope.user) {
+	$scope.signin = function () {
+
 		User.signin($scope.user)
 		.then(function (data) {
 			$scope.ifuser=false;
@@ -17,7 +18,7 @@
 			$scope.username="";
 			$scope.password="";
 		})
-	}
+	};
 
  	$scope.signup = function (newUser) {
         newUser.username = $scope.username;
